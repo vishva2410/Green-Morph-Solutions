@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Morph Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-recycle"></i>
+        Green Morph Solutions
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#collection">Collection</a>
+        <a href="#products">Products</a>
+        <a href="#track">Track Pickup</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Transforming Plastic Waste into Beautiful Creations</h1>
+        <p>Join us in making a difference while creating sustainable furniture</p>
+        <div class="hero-buttons">
+          <button class="cta-button primary" onclick="openScheduleForm()">
+            <i class="fas fa-calendar-plus"></i> Schedule a Pickup
+          </button>
+          <button class="cta-button secondary" onclick="scrollToSection('products')">
+            <i class="fas fa-shopping-cart"></i> Shop Epoxy Tables
+          </button>
+        </div>
+      </div>
+      <div class="hero-animation">
+        <!-- Animation container for the morphing effect -->
+        <div class="morph-animation"></div>
+      </div>
+    </section>
+
+    <section id="impact" class="impact">
+      <h2>Our Impact</h2>
+      <div class="impact-stats">
+        <div class="stat">
+          <i class="fas fa-recycle"></i>
+          <span id="plastic-recycled">0</span>
+          <p>KG Plastic Recycled</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-users"></i>
+          <span id="contributors">0</span>
+          <p>Active Contributors</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-tree"></i>
+          <span id="trees-saved">0</span>
+          <p>Trees Saved</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-cloud"></i>
+          <span id="co2-saved">0</span>
+          <p>KG CO₂ Avoided</p>
+        </div>
+      </div>
+      <div class="process-video">
+        <h3>How It Works</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Featured Epoxy Tables</h2>
+      <div class="product-carousel">
+        <button class="carousel-button prev">❮</button>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=300" alt="Ocean Wave Table">
+            <h3>Ocean Wave Table</h3>
+            <p>Made from recycled plastic</p>
+            <span class="price">$1,299</span>
+            <button>Learn More</button>
+          </div>
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1577926606472-fd6c0e7d3300?auto=format&fit=crop&w=300" alt="Forest Green Table">
+            <h3>Forest Green Table</h3>
+            <p>Sustainable & Durable</p>
+            <span class="price">$1,499</span>
+            <button>Learn More</button>
+          </div>
+          <!-- Add more product cards here -->
+        </div>
+        <button class="carousel-button next">❯</button>
+      </div>
+      <button class="customize-button">Customize Your Table</button>
+    </section>
+
+    <section id="mission" class="mission">
+      <h2>Our Mission</h2>
+      <div class="mission-content">
+        <div class="mission-text">
+          <h3>Reducing plastic waste and creating beauty from waste</h3>
+          <p>At Green Morph Solutions, we're committed to transforming plastic waste into stunning, functional furniture while making a positive impact on our environment.</p>
+        </div>
+        <div class="process-timeline">
+          <div class="timeline-item">
+            <i class="fas fa-trash"></i>
+            <h4>Collection</h4>
+            <p>We collect plastic waste from our contributors</p>
+          </div>
+          <div class="timeline-item">
+            <i class="fas fa-sort"></i>
+            <h4>Sorting</h4>
+            <p>Careful sorting and cleaning of materials</p>
+          </div>
+          <div class="timeline-item">
+            <i class="fas fa-industry"></i>
+            <h4>Processing</h4>
+            <p>Converting plastic into raw materials</p>
+          </div>
+          <div class="timeline-item">
+            <i class="fas fa-magic"></i>
+            <h4>Creation</h4>
+            <p>Crafting beautiful furniture pieces</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection">
+      <h2>Plastic Waste Collection</h2>
+      <div class="collection-content">
+        <div class="collection-info">
+          <h3>Get Paid for Your Plastic Waste</h3>
+          <p>Earn $18 per kg of plastic waste when you schedule a collection</p>
+          <ul class="collection-benefits">
+            <li><i class="fas fa-check"></i> Free pickup from your location</li>
+            <li><i class="fas fa-check"></i> Instant payment upon collection</li>
+            <li><i class="fas fa-check"></i> Earn rewards points</li>
+            <li><i class="fas fa-check"></i> Track your environmental impact</li>
+          </ul>
+        </div>
+        <button class="schedule-button" onclick="openScheduleForm()">Schedule a Collection</button>
+      </div>
+    </section>
+
+    <section id="track" class="track">
+      <h2>Track Your Pickup</h2>
+      <div class="tracking-container">
+        <div id="map" class="map"></div>
+        <div class="tracking-info">
+          <h3>Collection Status</h3>
+          <div id="tracking-status">
+            <p>Enter your tracking ID to view status</p>
+            <input type="text" id="tracking-id" placeholder="Enter Tracking ID">
+            <button onclick="trackCollection()">Track</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Eco Street, Green City, 12345</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@greenmorphsolutions.com</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleContactSubmit(event)">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="tel" placeholder="Your Phone">
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What types of plastic do you accept?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We accept all types of plastic waste including PET, HDPE, PVC, LDPE, PP, and PS. The plastic should be clean and dry.</p>
+          </div>
+        </div>
+        <!-- Add more FAQ items -->
+      </div>
+    </section>
+
+    <div id="schedule-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeScheduleForm()">&times;</span>
+        <h2>Schedule a Collection</h2>
+        <form id="collection-form" onsubmit="handleScheduleSubmit(event)">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone" required>
+          <input type="text" placeholder="Address" required>
+          <input type="number" placeholder="Estimated plastic weight (kg)" required>
+          <input type="datetime-local" placeholder="Preferred pickup time" required>
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green Morph Solutions</h3>
+          <p>Transforming waste into beauty, one piece at a time.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#mission">Our Mission</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Green Morph Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  </body>
+</html>
