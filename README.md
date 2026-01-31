@@ -4,7 +4,6 @@
 
 Green Morph Solutions is a sustainable initiative dedicated to reducing plastic waste by transforming it into stunning, functional furniture. We connect with the community to collect plastic waste, process it, and create high-quality epoxy tables and other products. Join us in making a positive impact on the environment!
 
-![Green Morph Solutions](https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80)
 
 ---
 
